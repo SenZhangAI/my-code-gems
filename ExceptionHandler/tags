@@ -1,0 +1,151 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BY_REFERENCE	funcinfo.h	/^	enum VAL_OR_REF  {BY_VALUE = 0, BY_REFERENCE = 8};$/;"	e	enum:my_handler::VAL_OR_REF
+BY_VALUE	funcinfo.h	/^	enum VAL_OR_REF  {BY_VALUE = 0, BY_REFERENCE = 8};$/;"	e	enum:my_handler::VAL_OR_REF
+CLEANUP_FUNC	funcinfo.h	/^    typedef void (*CLEANUP_FUNC)();$/;"	t	namespace:my_handler
+DllMain	excptstorage.cpp	/^BOOL APIENTRY DllMain( HANDLE hModule, $/;"	f
+E	demo.cpp	/^    class E$/;"	c	namespace:__anon1	file:
+EXCEPTION_REGISTRATION	sehhelper.h	/^    struct EXCEPTION_REGISTRATION $/;"	s	namespace:my_handler
+INSTALL_CATCH_PROTECTOR	sehhelper.h	29;"	d
+INSTALL_EXC_HANDLER	sehhelper.h	9;"	d
+INSTALL_TERMINATION_HANDLER	sehhelper.h	22;"	d
+MS_CPP_EXC	sehhelper.h	/^    const DWORD MS_CPP_EXC = 0xe06d7363;$/;"	m	namespace:my_handler
+REMOVE_CATCH_PROTECTOR	sehhelper.h	34;"	d
+REMOVE_EXC_HANDLER	sehhelper.h	16;"	d
+REMOVE_TERMINATION_HANDLER	sehhelper.h	27;"	d
+ReadMemory	install_my_handler.cpp	/^    bool ReadMemory(void *loc, void *buffer, DWORD size)$/;"	f	namespace:my_handler
+TYPEINFOVEC	excpt_helper.h	/^    typedef std::vector<const etype_info*> TYPEINFOVEC;$/;"	t	namespace:my_handler
+VAL_OR_REF	funcinfo.h	/^	enum VAL_OR_REF  {BY_VALUE = 0, BY_REFERENCE = 8};$/;"	g	namespace:my_handler
+WriteMemory	install_my_handler.cpp	/^    bool WriteMemory(void * loc, void * buffer, int size)$/;"	f	namespace:my_handler
+_EXCEPTION_EXIT_UNWIND	sehhelper.h	/^    const int _EXCEPTION_EXIT_UNWIND = 4;$/;"	m	namespace:my_handler
+_EXCEPTION_UNWINDING	sehhelper.h	/^    const int _EXCEPTION_UNWINDING   = 2;$/;"	m	namespace:my_handler
+_INCLUDED_ALGORITHM_	funcinfo.h	15;"	d
+_INCLUDED_EXCEPTION_STORAGE_H_	excptstorage.h	2;"	d
+_INCLUDED_EXCPT_HELPER_H_	funcinfo.h	5;"	d
+_INCLUDED_EXCPT_INFO_H_	excpt_helper.h	2;"	d
+_INCLUDED_FUNCINFO_H_	funcinfo.h	2;"	d
+_INCLUDED_FUNCTIONAL_	funcinfo.h	20;"	d
+_INCLUDED_INTALL_MY_HANDLER_H_	install_my_handler.h	2;"	d
+_INCLUDED_SEHHELPER_H_	sehhelper.h	2;"	d
+_INCLUDED_TYPEINFO_	excpt_helper.h	5;"	d
+_INCLUDED_VECTOR_	excpt_helper.h	10;"	d
+_INCLUDED_WINDOWS_H_	excpt_helper.h	15;"	d
+_INCLUDED_WINDOWS_H_	funcinfo.h	10;"	d
+_INCLUDED_WINDOWS_H_	sehhelper.h	5;"	d
+_destroy_local_objects	unwind.cpp	/^    void _destroy_local_objects($/;"	f	namespace:my_handler
+_my_exc_handler	myexchandler.cpp	/^    EXCEPTION_DISPOSITION  _my_exc_handler($/;"	f	namespace:my_handler
+any_catch_block	myexchandler.cpp	/^    bool any_catch_block($/;"	f	namespace:my_handler
+arr	excpt_helper.h	/^        etype_info   *arr[1];$/;"	m	struct:my_handler::etypeinfo_table
+call_catch_block	myexchandler.cpp	/^    DWORD call_catch_block($/;"	f	namespace:my_handler
+capture_context	sehhelper.h	/^    inline void capture_context(_CONTEXT* p)$/;"	f	namespace:my_handler
+catch_block_protector	myexchandler.cpp	/^    EXCEPTION_DISPOSITION  catch_block_protector($/;"	f	namespace:my_handler
+catchblock	funcinfo.h	/^    struct catchblock$/;"	s	namespace:my_handler
+catchblock_addr	funcinfo.h	/^        DWORD      catchblock_addr;$/;"	m	struct:my_handler::catchblock
+catchblock_count	funcinfo.h	/^        DWORD		catchblock_count;$/;"	m	struct:my_handler::tryblock
+catchblock_eq	funcinfo.h	/^        catchblock_eq(TYPEINFOVEC &et, const catchblock **ppc, $/;"	f	class:my_handler::catchblock_eq
+catchblock_eq	funcinfo.h	/^    class catchblock_eq : public std::unary_function<const catchblock&, bool>$/;"	c	namespace:my_handler
+cf	funcinfo.h	/^        CLEANUP_FUNC cf;$/;"	m	struct:my_handler::unwind
+copy_constructor	excpt_helper.h	/^        DWORD           copy_constructor;$/;"	m	struct:my_handler::etype_info
+copy_exc	excpt_helper.cpp	/^	void exception_helper::copy_exc(void *pexc, void *ploc,$/;"	f	class:my_handler::exception_helper
+copy_reference	excpt_helper.cpp	/^    void exception_helper::copy_reference(void *pexc, void *ploc) throw()$/;"	f	class:my_handler::exception_helper
+count	excpt_helper.h	/^        DWORD       count; $/;"	m	struct:my_handler::etypeinfo_table
+cpp_handler_instructions	install_my_handler.cpp	/^    char cpp_handler_instructions[5];$/;"	m	namespace:__anon3	file:
+destroy	excpt_helper.cpp	/^	void exception_helper::destroy($/;"	f	class:my_handler::exception_helper
+destroy_local_objects	unwind.cpp	/^    void destroy_local_objects($/;"	f	namespace:my_handler
+destructor	excpt_helper.h	/^        DWORD   destructor;$/;"	m	struct:my_handler::excpt_info
+do_local_unwind	myexchandler.cpp	/^    void do_local_unwind($/;"	f	namespace:my_handler
+dwstorage	excptstorage.cpp	/^    DWORD dwstorage;$/;"	m	namespace:__anon2	file:
+ebp	sehhelper.h	/^        DWORD                   ebp; $/;"	m	struct:my_handler::EXCEPTION_REGISTRATION
+end_id	funcinfo.h	/^        DWORD		end_id;$/;"	m	struct:my_handler::tryblock
+equal	excpt_helper.h	/^        bool equal(const etype_info* t)$/;"	f	struct:my_handler::etype_info
+etype_info	excpt_helper.h	/^    struct etype_info$/;"	s	namespace:my_handler
+etypeinfo_table	excpt_helper.h	/^    struct etypeinfo_table$/;"	s	namespace:my_handler
+exception_helper	excpt_helper.h	/^    class exception_helper$/;"	c	namespace:my_handler
+exception_storage	excptstorage.h	/^        exception_storage() throw()$/;"	f	class:my_handler::exception_storage
+exception_storage	excptstorage.h	/^    class exception_storage$/;"	c	namespace:my_handler
+excpt_info	excpt_helper.h	/^    struct excpt_info$/;"	s	namespace:my_handler
+find_catch_block	find_catch.cpp	/^    bool find_catch_block($/;"	f	namespace:my_handler
+foo	demo.cpp	/^    void foo()$/;"	f	namespace:__anon1
+funcinfo	funcinfo.h	/^    struct funcinfo$/;"	s	namespace:my_handler
+g_catch_all_ti	excpt_helper.cpp	/^    const etype_info g_catch_all_ti = {0,0,0,0,0,0,0};$/;"	m	namespace:my_handler	file:
+g_i	demo.cpp	/^    int g_i = 0;$/;"	m	namespace:__anon1	file:
+get_all_etypeinfos	excpt_helper.cpp	/^    void exception_helper::get_all_etypeinfos(const excpt_info* pei,$/;"	f	class:my_handler::exception_helper
+get_exception	excptstorage.h	/^        void * get_exception() throw()$/;"	f	class:my_handler::exception_storage
+get_exception	sehhelper.h	/^    inline bool get_exception($/;"	f	namespace:my_handler
+get_exception_info	excptstorage.h	/^        const excpt_info * get_exception_info() throw()$/;"	f	class:my_handler::exception_storage
+get_exception_storage	excptstorage.cpp	/^    __declspec(dllexport) exception_storage* get_exception_storage() throw()$/;"	f	namespace:my_handler
+get_excpt_info	sehhelper.h	/^    inline bool get_excpt_info($/;"	f	namespace:my_handler
+get_registration_head	sehhelper.h	/^    inline EXCEPTION_REGISTRATION * get_registration_head() throw()$/;"	f	namespace:my_handler
+get_stack_limits	sehhelper.h	/^    inline void get_stack_limits(void **pbase, void **ptop) throw()$/;"	f	namespace:my_handler
+get_try_block	find_catch.cpp	/^    void get_try_block($/;"	f	namespace:my_handler
+get_tryblock_table	funcinfo.h	/^    inline bool get_tryblock_table($/;"	f	namespace:my_handler
+get_unwind_table	funcinfo.h	/^    inline bool get_unwind_table($/;"	f	namespace:my_handler
+global_unwind	myexchandler.cpp	/^    void global_unwind(const EXCEPTION_REGISTRATION *pFrame, $/;"	f	namespace:my_handler
+handler	sehhelper.h	/^        DWORD                   handler; $/;"	m	struct:my_handler::EXCEPTION_REGISTRATION
+id	sehhelper.h	/^        DWORD                   id; $/;"	m	struct:my_handler::EXCEPTION_REGISTRATION
+id_in_any_try_block	find_catch.cpp	/^    bool id_in_any_try_block(const funcinfo *pfuncinfo, int id) throw()$/;"	f	namespace:my_handler
+install_my_exc_handler	demo.cpp	/^    void install_my_exc_handler()$/;"	f	namespace:__anon1
+install_my_handler	install_my_handler.cpp	/^    bool install_my_handler()$/;"	f	namespace:my_handler
+jmp	install_my_handler.cpp	/^        unsigned char jmp;$/;"	m	struct:my_handler::jmp_instr	file:
+jmp_instr	install_my_handler.cpp	/^    struct jmp_instr$/;"	s	namespace:my_handler	file:
+jump_to_continuation	myexchandler.cpp	/^    void jump_to_continuation($/;"	f	namespace:my_handler
+local_unwind	unwind.cpp	/^    void local_unwind($/;"	f	namespace:my_handler
+m_catch_ti	funcinfo.h	/^        etype_info m_catch_ti;$/;"	m	class:my_handler::catchblock_eq
+m_exc_types	funcinfo.h	/^        TYPEINFOVEC & m_exc_types;        $/;"	m	class:my_handler::catchblock_eq
+m_exc_types	funcinfo.h	/^        TYPEINFOVEC & m_exc_types;        $/;"	m	class:my_handler::tryblock_find
+m_pexc	excptstorage.h	/^        void *m_pexc;$/;"	m	class:my_handler::exception_storage
+m_pinfo	excptstorage.h	/^        const excpt_info *m_pinfo;$/;"	m	class:my_handler::exception_storage
+m_piter	funcinfo.h	/^        TYPEINFOVEC::iterator *m_piter;$/;"	m	class:my_handler::catchblock_eq
+m_piter	funcinfo.h	/^        TYPEINFOVEC::iterator *m_piter;$/;"	m	class:my_handler::tryblock_find
+m_ppcatchblock	funcinfo.h	/^        const catchblock **m_ppcatchblock;$/;"	m	class:my_handler::catchblock_eq
+m_ppcatchblock	funcinfo.h	/^        const catchblock **m_ppcatchblock;$/;"	m	class:my_handler::tryblock_find
+main	demo.cpp	/^int main()$/;"	f
+my_exc_handler	myexchandler.cpp	/^    EXCEPTION_DISPOSITION  my_exc_handler($/;"	f	namespace:my_handler
+my_handler	excpt_helper.cpp	/^namespace my_handler$/;"	n	file:
+my_handler	excpt_helper.h	/^namespace my_handler$/;"	n
+my_handler	excptstorage.cpp	/^namespace my_handler$/;"	n	file:
+my_handler	excptstorage.h	/^namespace my_handler$/;"	n
+my_handler	find_catch.cpp	/^namespace my_handler$/;"	n	file:
+my_handler	funcinfo.h	/^namespace my_handler$/;"	n
+my_handler	install_my_handler.cpp	/^namespace my_handler$/;"	n	file:
+my_handler	install_my_handler.h	/^namespace my_handler$/;"	n
+my_handler	myexchandler.cpp	/^namespace my_handler$/;"	n	file:
+my_handler	sehhelper.h	/^namespace my_handler$/;"	n
+my_handler	unwind.cpp	/^namespace my_handler$/;"	n	file:
+offset	funcinfo.h	/^        int        offset;     \/\/offset from stack frame pointer$/;"	m	struct:my_handler::catchblock
+offset	install_my_handler.cpp	/^        DWORD         offset;$/;"	m	struct:my_handler::jmp_instr	file:
+operator ()	funcinfo.h	/^        bool operator()(const catchblock& cb) throw()$/;"	f	class:my_handler::catchblock_eq
+operator ()	funcinfo.h	/^        bool operator()(const tryblock* tb) throw()$/;"	f	class:my_handler::tryblock_find
+pass_exc_to_catch_block	excpt_helper.cpp	/^	void exception_helper::pass_exc_to_catch_block($/;"	f	class:my_handler::exception_helper
+pcatchblock_table	funcinfo.h	/^        catchblock *pcatchblock_table;$/;"	m	struct:my_handler::tryblock
+prev	funcinfo.h	/^        DWORD        prev;$/;"	m	struct:my_handler::unwind
+prev	sehhelper.h	/^        EXCEPTION_REGISTRATION *prev; $/;"	m	struct:my_handler::EXCEPTION_REGISTRATION
+ptryblock_table	funcinfo.h	/^        tryblock *ptryblock_table;$/;"	m	struct:my_handler::funcinfo
+ptt	excpt_helper.h	/^        etypeinfo_table *ptt;$/;"	m	struct:my_handler::excpt_info
+punwindtable	funcinfo.h	/^        unwind   *punwindtable;$/;"	m	struct:my_handler::funcinfo
+restore_cpp_handler	install_my_handler.cpp	/^    bool restore_cpp_handler()$/;"	f	namespace:my_handler
+saved_handler_instructions	install_my_handler.cpp	/^    bool saved_handler_instructions = false;$/;"	m	namespace:__anon3	file:
+set	excptstorage.h	/^        void set(void *pexc, const excpt_info *pexc_info) throw()$/;"	f	class:my_handler::exception_storage
+set_registration_head	sehhelper.h	/^    inline void set_registration_head(const EXCEPTION_REGISTRATION *p) throw()$/;"	f	namespace:my_handler
+sig	funcinfo.h	/^        DWORD	  sig;$/;"	m	struct:my_handler::funcinfo
+size	excpt_helper.h	/^        DWORD           size;$/;"	m	struct:my_handler::etype_info
+start_id	funcinfo.h	/^        DWORD		start_id;$/;"	m	struct:my_handler::tryblock
+terminate_handler	myexchandler.cpp	/^    EXCEPTION_DISPOSITION  terminate_handler($/;"	f	namespace:my_handler
+ti	excpt_helper.h	/^        std::type_info *ti; $/;"	m	struct:my_handler::etype_info
+ti	funcinfo.h	/^        type_info *ti;         $/;"	m	struct:my_handler::catchblock
+tryblock	funcinfo.h	/^    struct tryblock$/;"	s	namespace:my_handler
+tryblock_count	funcinfo.h	/^        DWORD     tryblock_count; \/\/number of entries in tryblocktable$/;"	m	struct:my_handler::funcinfo
+tryblock_find	funcinfo.h	/^        tryblock_find(TYPEINFOVEC & et, const catchblock **ppc, $/;"	f	class:my_handler::tryblock_find
+tryblock_find	funcinfo.h	/^    class tryblock_find : public std::unary_function<const tryblock*, bool>$/;"	c	namespace:my_handler
+u1	excpt_helper.h	/^        DWORD           u1;$/;"	m	struct:my_handler::etype_info
+u1	excpt_helper.h	/^        DWORD   u1;$/;"	m	struct:my_handler::excpt_info
+u1	funcinfo.h	/^        DWORD		u1;$/;"	m	struct:my_handler::tryblock
+u2	excpt_helper.h	/^        DWORD           u2[3];$/;"	m	struct:my_handler::etype_info
+u2	excpt_helper.h	/^        DWORD   u2;$/;"	m	struct:my_handler::excpt_info
+unwind	funcinfo.h	/^    struct unwind$/;"	s	namespace:my_handler
+unwind_count	funcinfo.h	/^        DWORD	  unwind_count;   \/\/number of entries in unwindtable$/;"	m	struct:my_handler::funcinfo
+val_or_ref	funcinfo.h	/^        DWORD      val_or_ref; \/\/Whether the exception is passed$/;"	m	struct:my_handler::catchblock
