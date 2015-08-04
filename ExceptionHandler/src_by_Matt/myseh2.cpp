@@ -19,6 +19,20 @@ _except_handler(
     printf( "Home Grown handler: Exception Code: %08X Exception Flags %X",
              ExceptionRecord->ExceptionCode, ExceptionRecord->ExceptionFlags );
 
+            /*
+             * _EXCEPTION_RECORD的结构如下：
+             *
+             *  typedef struct _EXCEPTION_RECORD
+             *  {
+             *     DWORD ExceptionCode;
+             *     DWORD ExceptionFlags;
+             *     struct _EXCEPTION_RECORD *ExceptionRecord;
+             *     PVOID ExceptionAddress;
+             *     DWORD NumberParameters;
+             *     DWORD ExceptionInformation[EXCEPTION_MAXIMUM_PARAMETERS];
+             *  }  EXCEPTION_RECORD;
+             */
+
     if ( ExceptionRecord->ExceptionFlags & 1 )
         printf( " EH_NONCONTINUABLE" );
     if ( ExceptionRecord->ExceptionFlags & 2 )
@@ -39,6 +53,8 @@ _except_handler(
 void HomeGrownFrame( void )
 {
     DWORD handler = (DWORD)_except_handler;
+
+    /*以下汇编内容的解释参见myseh.cpp*/
 
     __asm
     {                           // Build EXCEPTION_REGISTRATION record:
@@ -63,7 +79,7 @@ int main()
 {
     _try
     {
-        HomeGrownFrame(); 
+        HomeGrownFrame();
     }
     _except( EXCEPTION_EXECUTE_HANDLER )
     {

@@ -9,6 +9,17 @@
 #include <stdio.h>
 #pragma hdrstop
 
+/*
+ * #pragma hdrstop表示预编译头文件到此为止,后面的头文件不进行预编译。
+ * 可以预编译头文件以加快链接的速度，
+ * 但如果所有头文件都进行预编译又可能占太多磁盘空间，
+ * 所以使用这个选项排除一些头文件。
+
+ * 有时单元之间有依赖关系，比如单元A依赖单元B，所以单元B要先于单元A编译。
+ * 你可以用#pragma startup指定编译优先级，
+ * 如果使用了#pragma package(smart_init) ，就会根据优先级的大小先后编译
+ */
+
 //----------------------------------------------------------------------------
 // !!! WARNING !!!  This program only works with Visual C++, as the data
 // structures being shown are specific to Visual C++.
@@ -88,7 +99,7 @@ void ShowSEHFrame( VC_EXCEPTION_REGISTRATION * pVCExcRec )
     }
 
     printf( "\n" );
-}   
+}
 
 //
 // Walk the linked list of frames, displaying each in turn
@@ -111,7 +122,7 @@ void WalkSEHFrames( void )
     {
         ShowSEHFrame( pVCExcRec );
         pVCExcRec = (VC_EXCEPTION_REGISTRATION *)(pVCExcRec->prev);
-    }       
+    }
 }
 
 void Function1( void )
