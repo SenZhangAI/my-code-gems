@@ -1,4 +1,11 @@
 
+### Introduction
+
+Both these papers and codes will give you a better understanding of Exception.
+
+**Both original source codes can be downloaded at the websides links of this two paper**.
+
+
 ### 1. A Crash Course on the Depths of Win32™ Structured Exception Handling
 `.\src_by_Matt\` is writen by Matt Pietrek in 1997. 
 
@@ -13,4 +20,4 @@ A Chinese version can be seen at [HERE](http://www.cnblogs.com/awpatp/archive/20
 The relative paper is [How a C++ compiler implements exception handling](http://www.codeproject.com/Articles/2126/How-a-C-compiler-implements-exception-handling).
 As the same of this paper's title, the paper implemet an exception handling by C++.
 
-Both these papers and codes will give you a better understanding of Exception
+
