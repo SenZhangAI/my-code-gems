@@ -52,6 +52,9 @@ struct scopetable_entry
 
 // The extended exception frame used by Visual C++
 
+/* 这里需要注意，这是VC编译器扩展的Exception_Registration结构，
+ * 除了基本的pre和handler之外，还有scopetable, trylevel、_ebp等，具体参见paper
+ * */
 struct VC_EXCEPTION_REGISTRATION : EXCEPTION_REGISTRATION
 {
     scopetable_entry *  scopetable;

@@ -67,6 +67,8 @@ _except_handler(
 
     // Tell the OS to restart the faulting instruction
     return ExceptionContinueExecution;
+    // ExceptionContinueExecution;表示同意处理该异常
+    // ExceptionContinueSearch;则表示不能处理这个异常，继续往前搜索可处理该异常的函数
 }
 
 int main()
@@ -94,6 +96,9 @@ int main()
          * 变更为现在的ESP，也就是用栈来模拟真正的_EXCEPTION_REGISTRATION
          * 至此，FS[0] -> _EXCEPTION_REGISTRATION.handler -> _except_handler()
          * 的结构已经顺利实现了。
+         *
+         * 事实上，对于编译器而言，创建_EXCEPTION_REGISTRATION结构也是在栈上进行的，
+         * 栈天然地保证了|prePointertoOlderExceptionRegistration|handler|的结构顺序。
          */
     }
 

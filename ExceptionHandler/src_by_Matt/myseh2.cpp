@@ -48,6 +48,8 @@ _except_handler(
 
     // Punt... We don't want to handle this... Let somebody else handle it
     return ExceptionContinueSearch;
+    // ExceptionContinueExecution;表示同意处理该异常
+    // ExceptionContinueSearch;则表示不能处理这个异常，继续往前搜索可处理该异常的函数
 }
 
 void HomeGrownFrame( void )
