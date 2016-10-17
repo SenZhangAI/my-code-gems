@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="BubbleClicked" Height="559" Width="329"
+        MouseUp="SomethingClicked">
+    <Grid x:Name="grid1" Margin="3,3,10,3" MouseUp="SomethingClicked">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Margin="5" Grid.Row="0" HorizontalAlignment="Left"
+               Background="AliceBlue" BorderBrush="Black" BorderThickness="1"
+               MouseUp="SomethingClicked">
+            <StackPanel MouseUp="SomethingClicked">
+                <TextBlock Margin="3" MouseUp="SomethingClicked">
+                    Image and text label
+                </TextBlock>
+                <Image Source="Resource\test.png" Stretch="None" MouseUp="SomethingClicked"/>
+                <TextBlock Margin="3" MouseUp="SomethingClicked">
+                    Courtesy of the StackPanel
+                </TextBlock>
+            </StackPanel>
+        </Label>
+
+        <ListBox Grid.Row="1" Margin="5" Name="lstMessage"> </ListBox>
+        <CheckBox Grid.Row="2" Margin="5" Name="chkHandle">
+            Handle first event
+        </CheckBox>
+        <Button Grid.Row="3" Margin="5" Padding="3" HorizontalAlignment="Right"
+                Name="cmdClear" Click="cmdClear_Click">Clear List</Button>
+    </Grid>
+</Window>
